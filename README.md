@@ -1,4 +1,5 @@
 # Film vault
 
-## This project covers our React course.
-### React, typescript, React native.
+
+## This project covers all material from our React course.
+React, typescript, React native.
