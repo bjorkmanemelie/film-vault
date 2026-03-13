@@ -8,6 +8,7 @@ import MovieDetailsPage from "./pages/MovieDetailsPage.tsx";
 import HomePage from "./pages/HomePage.tsx";
 import Navbar from "./components/Navbar.tsx";
 import { SearchProvider } from "./Context/SearchContext.tsx";
+import SearchPage from "./pages/SearchPage.tsx";
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
@@ -18,6 +19,7 @@ createRoot(document.getElementById("root")!).render(
           <Routes>
             <Route path="/" element={<HomePage />} />
             <Route path="/favorites" element={<FavoritesPage />} />
+            <Route path="/search" element={<SearchPage />} />
             <Route path="/moviedetails" element={<MovieDetailsPage />} />
           </Routes>
         </BrowserRouter>

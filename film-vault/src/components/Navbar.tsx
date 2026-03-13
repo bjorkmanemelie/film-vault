@@ -1,8 +1,9 @@
-import { NavLink } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
 import { useSearch } from "../Context/SearchContext";
 
 export default function Navbar() {
   const { query, setQuery } = useSearch();
+  const navigate = useNavigate();
 
   return (
     <nav className="navbar">
