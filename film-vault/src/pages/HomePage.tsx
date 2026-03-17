@@ -2,14 +2,7 @@ import MovieCards from "../components/MovieCard";
 import { useFavorites } from "../Context/FavoriteContext";
 import { useFetch } from "../hooks/useFetch";
 import { useSearch } from "../Context/SearchContext";
-
-type TMDBMovie = {
-  id: number;
-  title: string;
-  release_date: string;
-  vote_average: number;
-  poster_path: string;
-};
+import type { TMDBMovie } from "../types/movie";
 
 function HomePage() {
   const { query } = useSearch();

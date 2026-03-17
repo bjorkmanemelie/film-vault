@@ -11,7 +11,10 @@ export default function Navbar() {
       <input
         className="navbar-search"
         value={query}
-        onChange={(e) => setQuery(e.target.value)}
+        onChange={(e) => {
+          setQuery(e.target.value);
+          navigate("/search");
+        }}
         placeholder="Search movie..."
       />
       <div className="navbar-links">
